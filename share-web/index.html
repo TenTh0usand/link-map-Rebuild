@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Link Map · Zero-Server Tab Share</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #181a1f;
+      --card: #23262e;
+      --border: #343844;
+      --text: #eceef2;
+      --muted: #98a0ae;
+      --accent: #d2a400;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f4f5f7;
+        --card: #ffffff;
+        --border: #e2e6ee;
+        --text: #181a1f;
+        --muted: #64748b;
+        --accent: #d97706;
+      }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); padding: 24px 16px 60px; }
+    .wrap { max-width: 920px; margin: 0 auto; }
+    header { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 12px; border-bottom: 1px solid var(--border); padding-bottom: 14px; margin-bottom: 16px; }
+    h1 { margin: 0; font-size: 21px; }
+    .meta { font-size: 12px; color: var(--muted); }
+    .toolbar { display: flex; gap: 8px; margin-bottom: 16px; }
+    input { flex: 1; padding: 9px 12px; border-radius: 8px; border: 1px solid var(--border); background: var(--card); color: var(--text); font-size: 13px; outline: none; }
+    input:focus { border-color: var(--accent); }
+    button { padding: 9px 14px; border-radius: 8px; border: 1px solid var(--border); background: var(--card); color: var(--text); font-size: 13px; cursor: pointer; font-weight: 500; }
+    button:hover { border-color: var(--accent); color: var(--accent); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(255px, 1fr)); gap: 12px; }
+    .card { display: flex; flex-direction: column; gap: 6px; padding: 14px; border-radius: 10px; background: var(--card); border: 1px solid var(--border); text-decoration: none; color: inherit; }
+    .card:hover { border-color: var(--accent); }
+    .host { align-self: flex-start; padding: 2px 8px; border-radius: 999px; background: rgba(210, 164, 0, 0.16); color: var(--accent); font-size: 11px; font-weight: 600; }
+    .title { font-size: 14px; font-weight: 600; line-height: 1.4; }
+    .desc { font-size: 12px; color: var(--muted); line-height: 1.45; margin: 0; }
+    .url { margin-top: auto; font-size: 11px; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .empty { text-align: center; padding: 48px 16px; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1 id="title">Link Map Share</h1>
+        <p id="subtitle" class="meta"></p>
+      </div>
+      <span id="badge" class="meta">Zero-Server · Local Hash Decode</span>
+    </header>
+    <div class="toolbar" id="toolbar" style="display:none;">
+      <input id="q" type="search" placeholder="Search shared links..." />
+      <button id="copyMdBtn" type="button">Copy Markdown</button>
+    </div>
+    <div id="content" class="grid"></div>
+    <div id="empty" class="empty">Open a valid Link Map <code>#lm1=...</code> share URL to view tabs.</div>
+  </div>
+  <script>
+    function base64UrlToBytes(b64) {
+      const padded = b64.replace(/-/g, '+').replace(/_/g, '/');
+      const padLen = (4 - (padded.length % 4)) % 4;
+      const bin = atob(padded + '='.repeat(padLen));
+      const arr = new Uint8Array(bin.length);
+      for (let i = 0; i < bin.length; i++) arr[i] = bin.charCodeAt(i);
+      return arr;
+    }
+    async function inflateRaw(bytes) {
+      const ds = new DecompressionStream('deflate-raw');
+      const readPromise = new Response(ds.readable).arrayBuffer();
+      const writer = ds.writable.getWriter();
+      await writer.write(bytes);
+      await writer.close();
+      const buf = await readPromise;
+      return new TextDecoder().decode(buf);
+    }
+    function safeUrl(raw) {
+      try {
+        const u = new URL(raw);
+        if (u.protocol === 'http:' || u.protocol === 'https:' || u.protocol === 'ftp:') return u.toString();
+      } catch {}
+      return '#';
+    }
+    function extractHost(raw) {
+      try { return new URL(raw).hostname.replace(/^www\./i, ''); } catch { return 'link'; }
+    }
+    async function renderFromHash() {
+      const hash = location.hash.slice(1);
+      if (!hash.startsWith('lm1=')) return;
+      const token = hash.slice(4);
+      const emptyEl = document.getElementById('empty');
+      const contentEl = document.getElementById('content');
+      const toolbarEl = document.getElementById('toolbar');
+      try {
+        const json = await inflateRaw(base64UrlToBytes(token));
+        const data = JSON.parse(json);
+        if (data.v !== 1 || !Array.isArray(data.i)) throw new Error('Invalid payload');
+
+        document.getElementById('title').textContent = data.t || 'Shared Tabs';
+        document.getElementById('subtitle').textContent =
+          (data.d ? data.d + ' · ' : '') + data.i.length + ' links';
+        emptyEl.style.display = 'none';
+        toolbarEl.style.display = 'flex';
+        contentEl.innerHTML = '';
+
+        const mdLines = ['# ' + (data.t || 'Shared Tabs'), ''];
+        const cards = [];
+        for (const tuple of data.i) {
+          if (!Array.isArray(tuple) || tuple.length < 2) continue;
+          const title = tuple[0] || tuple[1];
+          const url = tuple[1];
+          const desc = tuple[2] || '';
+          mdLines.push('- [' + title.replace(/\[/g, '\\[').replace(/\]/g, '\\]') + '](' + url + ')' + (desc ? ' — ' + desc : ''));
+
+          const a = document.createElement('a');
+          a.className = 'card';
+          a.href = safeUrl(url);
+          a.target = '_blank';
+          a.rel = 'noopener noreferrer';
+          a.dataset.q = (title + ' ' + url + ' ' + desc).toLowerCase();
+
+          const hostEl = document.createElement('span');
+          hostEl.className = 'host';
+          hostEl.textContent = extractHost(url);
+          a.appendChild(hostEl);
+
+          const titleEl = document.createElement('div');
+          titleEl.className = 'title';
+          titleEl.textContent = title;
+          a.appendChild(titleEl);
+
+          if (desc) {
+            const descEl = document.createElement('p');
+            descEl.className = 'desc';
+            descEl.textContent = desc;
+            a.appendChild(descEl);
+          }
+
+          const urlEl = document.createElement('div');
+          urlEl.className = 'url';
+          urlEl.textContent = url;
+          a.appendChild(urlEl);
+
+          contentEl.appendChild(a);
+          cards.push(a);
+        }
+
+        document.getElementById('q').oninput = (ev) => {
+          const val = ev.target.value.trim().toLowerCase();
+          for (const c of cards) {
+            c.style.display = !val || c.dataset.q.includes(val) ? 'flex' : 'none';
+          }
+        };
+        const mdText = mdLines.join('\n');
+        document.getElementById('copyMdBtn').onclick = async () => {
+          await navigator.clipboard.writeText(mdText);
+          const btn = document.getElementById('copyMdBtn');
+          btn.textContent = 'Copied!';
+          setTimeout(() => { btn.textContent = 'Copy Markdown'; }, 1500);
+        };
+      } catch (err) {
+        emptyEl.textContent = 'Invalid or corrupted share link.';
+        emptyEl.style.display = 'block';
+        toolbarEl.style.display = 'none';
+      }
+    }
+    window.addEventListener('hashchange', renderFromHash);
+    renderFromHash();
+  </script>
+</body>
+</html>

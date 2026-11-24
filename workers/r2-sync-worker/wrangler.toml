@@ -1,0 +1,14 @@
+name = "link-map-r2-sync"
+main = "src/index.ts"
+compatibility_date = "2025-01-01"
+
+[[r2_buckets]]
+binding = "LINK_MAP_BUCKET"
+bucket_name = "link-map-sync"
+
+# Deploy steps:
+# 1. npx wrangler r2 bucket create link-map-sync
+# 2. npx wrangler secret put AUTH_TOKEN
+# 3. npx wrangler deploy
+# 4. Bind a custom domain (e.g. https://sync.yourdomain.com) in Cloudflare Dashboard
+#    for reliable mainland China connectivity without R2 S3 CORS hurdles.

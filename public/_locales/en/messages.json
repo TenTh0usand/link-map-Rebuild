@@ -1,6 +1,6 @@
 {
     "extDesc": {
-        "message": "⭐Link Map - Professional Tab Manager"
+        "message": "⭐Link Map - Local-first tree & tab-group workspace"
     },
     "search": {
         "message": "Search"
@@ -9,31 +9,31 @@
         "message": "Settings"
     },
     "settingsImportExport": {
-        "message": "Import/Export"
+        "message": "Backup, Restore & Migration"
     },
     "exportLinkMapData": {
-        "message": "Export Link Map Data"
+        "message": "Export Link Map JSON"
     },
     "importLinkMapData": {
-        "message": "Import Link Map Data"
+        "message": "Import Link Map JSON"
     },
     "importTabOutlinerData": {
-        "message": "Import TabOutliner Data"
+        "message": "Import Tabs Outliner"
     },
     "feedback": {
         "message": "Feedback"
     },
     "feedbackDesc": {
-        "message": "Give us feedback"
+        "message": "Share feedback or report issues"
     },
     "ctxMenuEdit": {
-        "message": "Edit"
+        "message": "Edit Alias"
     },
     "ctxMenuDelete": {
         "message": "Delete"
     },
     "ctxMenuClose": {
-        "message": "Close"
+        "message": "Close & Save"
     },
     "ctxMenuCopy": {
         "message": "Copy"
@@ -45,88 +45,37 @@
         "message": "Copy Markdown Link"
     },
     "ctxMenuNotes": {
-        "message": "Tags"
+        "message": "Notes"
     },
     "ctxMenuNotesCreateAsParent": {
-        "message": "Create as Parent"
+        "message": "Create Note as Parent"
     },
     "ctxMenuNotesCreateAsFirstSubNode": {
-        "message": "Create as Fist Child"
+        "message": "Create Note as First Child"
     },
     "ctxMenuNotesCreateAsLastSubNode": {
-        "message": "Create as Last Child"
+        "message": "Create Note as Last Child"
     },
     "ctxMenuNotesCreateAfter": {
-        "message": "Create After(Only for Tag Node)"
+        "message": "Create Note After"
     },
     "importPageInfo": {
-        "message": "Drag and Drop the nodes below to the Link Map Tree to import the data."
+        "message": "Drag nodes into your Link Map tree, or select items to batch import."
     },
     "importPageExportTime": {
         "message": "Backup Time"
     },
     "welcomeTitle": {
-        "message": "Welcome to Link Map!"
-    },
-    "welcomeIntro": {
-        "message": "Link Map is a browser extension that helps you organize your tabs."
-    },
-    "welcomeIntro2": {
-        "message": "It is still in early development, so please be patient with us. More features are coming soon!"
-    },
-    "welcomeIntro3": {
-        "message": "Now we have prepare some tips to help you get in to this place."
-    },
-    "welcomeIntro4": {
-        "message": "You could just close this popup and follow the nodes named \"\uD83D\uDE80 Tips\" to move on."
-    },
-    "tipsTitle": {
-        "message": "Tips"
-    },
-    "tipsDnd": {
-        "message": "Drag and drop to re-arrange nodes"
-    },
-    "tipsHover": {
-        "message": "Hover to operate quick actions"
-    },
-    "tipsEdit": {
-        "message": "Click edit to rename a node"
-    },
-    "tipsDelete": {
-        "message": "Click Delete to delete a node"
-    },
-    "tipsDeleteAll": {
-        "message": "Collapse the parent node to delete all its children"
-    },
-    "tipsDeleteAllSample": {
-        "message": "Wait for Delete"
-    },
-    "tipsRClick": {
-        "message": "Right click to show context menu"
-    },
-    "tipsSearch": {
-        "message": "Try the search box"
-    },
-    "tipsSettings": {
-        "message": "Click settings icon to perform export/import"
-    },
-    "tipsFeedback1": {
-        "message": "Any feedback is welcome!"
-    },
-    "tipsFeedback2": {
-        "message": "Use Feedback button in the settings to send feedback"
-    },
-    "tipsFinish": {
-        "message": "Finish! you can delete these nodes now"
+        "message": "Welcome to Link Map v2!"
     },
     "appearance": {
-        "message": "Appearance"
+        "message": "Appearance & Behavior"
     },
     "theme": {
         "message": "Theme"
     },
     "themeAuto": {
-        "message": "Auto"
+        "message": "Follow System"
     },
     "themeLight": {
         "message": "Light"
@@ -141,13 +90,13 @@
         "message": "Not set"
     },
     "goToPreviousNode": {
-        "message": "Go to previous node"
+        "message": "Select previous node"
     },
     "goToNextNode": {
-        "message": "Go to next node"
+        "message": "Select next node"
     },
     "goToParentNode": {
-        "message": "Go to parent node"
+        "message": "Select parent node"
     },
     "expand": {
         "message": "Expand"
@@ -156,73 +105,16 @@
         "message": "Collapse"
     },
     "basicOperation": {
-        "message": "Basic Operation"
+        "message": "Basic Operations"
     },
     "navigation": {
         "message": "Navigation"
     },
     "shortcut": {
-        "message": "Shortcut"
-    },
-    "updateNoteTitle": {
-        "message": "Link Map feels stronger!"
-    },
-    "updateNoteContent": {
-        "message": "In the v1.0.0, there is some little improvements to give your more detail control of Link Map’s behavior. If you are interested, just checkout the top node in the tree."
-    },
-    "updateTutorialNode": {
-        "message": "New features in v1.0.10"
-    },
-    "updateTutorialFeature1": {
-        "message": "Options: Just besides the “Expand All“ button"
-    },
-    "updateTutorialFeature1Desc1": {
-        "message": "Auto Scroll to Active Tab"
-    },
-    "updateTutorialFeature1Desc11": {
-        "message": "Enable: When switch tab, tree will autoscroll to active tab, and make it visible"
-    },
-    "updateTutorialFeature1Desc12": {
-        "message": "Disable: Tree won’t draw attention"
-    },
-    "updateTutorialFeature1Desc2": {
-        "message": "Create New Tab by Level"
-    },
-    "updateTutorialFeature1Desc21": {
-        "message": "Enable: When create new empty tab, new tab created as the child of the opener(if opener is the last node)"
-    },
-    "updateTutorialFeature1Desc22": {
-        "message": "Disable: New tab will always create flatten as the last child of Window"
-    },
-    "updateTutorialFeature1Desc23": {
-        "message": "May confusing, try it"
-    },
-    "updateTutorialFeature2": {
-        "message": "Copy All Subtree as TXT/Markdown: added in the context-menu"
-    },
-    "updateTutorialFeature2Desc1": {
-        "message": "It’s useful when putting your links to note-taking app"
-    },
-    "updateTutorialFeature3": {
-        "message": "Optimization for 'Locate'"
-    },
-    "updateTutorialFeature3Desc1": {
-        "message": "Now it will only locate the active tab of the top window"
-    },
-    "updateTutorialFeature3Desc2": {
-        "message": "It still doesn't perform perfectly sometime, I will continue optimizing"
-    },
-    "reviewLinkMap": {
-        "message": "Do you like Link Map or have any suggestions?"
-    },
-    "reviewLinkMapDesc": {
-        "message": "Double click this node"
-    },
-    "reviewLinkMapDesc2": {
-        "message": "Review Link Map"
+        "message": "Shortcuts"
     },
     "locate": {
-        "message": "Locate Active Tab Node"
+        "message": "Locate Active Tab"
     },
     "collapseAll": {
         "message": "Collapse All"
@@ -231,13 +123,13 @@
         "message": "Expand All"
     },
     "activeOrOpen": {
-        "message": "Active/Open"
+        "message": "Activate / Open"
     },
     "save": {
-        "message": "Save"
+        "message": "Lock / Save"
     },
     "copySubtreeAsText": {
-        "message": "Copy Subtree as Text"
+        "message": "Copy Subtree as TXT"
     },
     "copySubtreeAsMarkdown": {
         "message": "Copy Subtree as Markdown"
@@ -246,21 +138,468 @@
         "message": "Options"
     },
     "autoScrollToActiveTab": {
-        "message": "Auto Scroll to Active Tab"
+        "message": "Auto scroll to active tab"
     },
     "createNewTabByLevel": {
-        "message": "Create New Tab by Level"
+        "message": "Create new tab by opener level"
     },
     "deleteNode": {
-        "message": "Delete Node"
+        "message": "Delete Node Only"
     },
     "deleteSubtree": {
         "message": "Delete Subtree"
     },
     "closeNode": {
-        "message": "Close Node"
+        "message": "Close & Save Node"
     },
     "closeSubtree": {
-        "message": "Close Subtree"
+        "message": "Close & Save Subtree"
+    },
+    "offlineMode": {
+        "message": "Simple Offline Mode (Zero Network)"
+    },
+    "offlineModeDesc": {
+        "message": "100% local only. Blocks all outbound network requests, AI calls, and telemetry. Data never leaves IndexedDB."
+    },
+    "offlineModeBadge": {
+        "message": "Local Only"
+    },
+    "openInWindow": {
+        "message": "Pop out to Detached Window"
+    },
+    "openInSidePanel": {
+        "message": "Switch to Side Panel"
+    },
+    "defaultOpenMode": {
+        "message": "Extension Icon Click Action"
+    },
+    "defaultOpenModeDesc": {
+        "message": "Choose what opens by default when clicking the extension icon or pressing the shortcut."
+    },
+    "modeSidePanel": {
+        "message": "Side Panel"
+    },
+    "modeWindow": {
+        "message": "Detached Window"
+    },
+    "viewTree": {
+        "message": "Tree"
+    },
+    "viewGroups": {
+        "message": "Groups"
+    },
+    "newCollection": {
+        "message": "New Tab Group"
+    },
+    "newNote": {
+        "message": "New Note"
+    },
+    "groupInChrome": {
+        "message": "Group in Browser"
+    },
+    "ungroupInChrome": {
+        "message": "Ungroup"
+    },
+    "syncNativeTabGroups": {
+        "message": "Sync Chrome native Tab Groups"
+    },
+    "compactMode": {
+        "message": "Compact row density"
+    },
+    "moveToCollection": {
+        "message": "Add to Tab Group"
+    },
+    "openAllTabs": {
+        "message": "Open All as Group"
+    },
+    "closeAndSaveAll": {
+        "message": "Close & Save All"
+    },
+    "multiSelect": {
+        "message": "Multi-Select"
+    },
+    "selectedCount": {
+        "message": "selected"
+    },
+    "batchCloseSave": {
+        "message": "Close & Save"
+    },
+    "batchDelete": {
+        "message": "Delete"
+    },
+    "batchCopyMd": {
+        "message": "Copy MD"
+    },
+    "batchCopyTxt": {
+        "message": "Copy TXT"
+    },
+    "batchGroupChrome": {
+        "message": "Group"
+    },
+    "clearSelection": {
+        "message": "Clear"
+    },
+    "localBackups": {
+        "message": "Local Rolling Snapshots"
+    },
+    "createBackupNow": {
+        "message": "Snapshot Now"
+    },
+    "restoreBackup": {
+        "message": "Restore"
+    },
+    "noBackups": {
+        "message": "No local snapshots yet"
+    },
+    "importSelected": {
+        "message": "Import Selected"
+    },
+    "importAllToTree": {
+        "message": "Import All to Tree"
+    },
+    "importAllAsCollection": {
+        "message": "Import as Tab Group"
+    },
+    "importSuccess": {
+        "message": "Imported successfully"
+    },
+    "dragOrClickImport": {
+        "message": "Drop Link Map (.json) or Tabs Outliner (.tree / .json) file here, or click to select"
+    },
+    "dashboard": {
+        "message": "Navigation Dashboard"
+    },
+    "openInDashboard": {
+        "message": "Open in Dashboard"
+    },
+    "showSiteDescriptions": {
+        "message": "Show one-line site descriptions"
+    },
+    "showSiteDescriptionsDesc": {
+        "message": "Show saved/AI one-line site summaries on navigation cards"
+    },
+    "addDescription": {
+        "message": "Add Description"
+    },
+    "editDescription": {
+        "message": "Edit Site Description"
+    },
+    "descriptionPlaceholder": {
+        "message": "One-line guide: what is this site for?"
+    },
+    "allItems": {
+        "message": "All Sites"
+    },
+    "catWorkspace": {
+        "message": "Workspace"
+    },
+    "catReadlist": {
+        "message": "Readlist"
+    },
+    "catRepo": {
+        "message": "Repos"
+    },
+    "catMedia": {
+        "message": "Media"
+    },
+    "catGeneral": {
+        "message": "General"
+    },
+    "share": {
+        "message": "Share"
+    },
+    "shareSingleCard": {
+        "message": "Share URL QR Card"
+    },
+    "shareGroup": {
+        "message": "Share Tab Group / Links"
+    },
+    "shareLinkAndQr": {
+        "message": "Link & QR"
+    },
+    "shareOfflineHtml": {
+        "message": "Offline HTML"
+    },
+    "shareMarkdownTab": {
+        "message": "Markdown / TXT"
+    },
+    "copyImage": {
+        "message": "Copy Card Image"
+    },
+    "downloadPng": {
+        "message": "Download PNG"
+    },
+    "copyShareLink": {
+        "message": "Copy Share Link"
+    },
+    "downloadHtml": {
+        "message": "Download Offline HTML"
+    },
+    "openShareViewer": {
+        "message": "Open Share Viewer"
+    },
+    "cardTheme": {
+        "message": "Card Style"
+    },
+    "showWatermark": {
+        "message": "Show Link Map Watermark"
+    },
+    "shareBaseUrl": {
+        "message": "Public Share Page URL (Optional)"
+    },
+    "shareBaseUrlDesc": {
+        "message": "Leave blank to use extension share viewer. Deploy share-web/index.html to GitHub Pages or Cloudflare Pages for mobile QR scanning (zero server storage)."
+    },
+    "qrTooLargeHint": {
+        "message": "Too many links for a crisp QR code. Use Copy Share Link or Offline HTML export instead."
+    },
+    "importSharedBundle": {
+        "message": "Import to Link Map"
+    },
+    "pasteShareLink": {
+        "message": "Paste Link Map share URL or #lm1=... code"
+    },
+    "cloudSyncTab": {
+        "message": "Cloud Sync"
+    },
+    "syncOfflineBannerTitle": {
+        "message": "Simple Offline Mode is ON — Cloud Sync is locked"
+    },
+    "syncOfflineBannerDesc": {
+        "message": "All outbound requests are hard-blocked. Disable Offline Mode first when you are ready to connect your own storage."
+    },
+    "disableOfflineModeBtn": {
+        "message": "Disable Offline Mode"
+    },
+    "syncProvider": {
+        "message": "Sync Provider"
+    },
+    "syncProviderNone": {
+        "message": "Disabled (Local IndexedDB Only)"
+    },
+    "syncProviderWebDav": {
+        "message": "WebDAV (Jianguoyun / 123Pan / OpenList)"
+    },
+    "syncProviderR2": {
+        "message": "Cloudflare R2 (Direct S3 API)"
+    },
+    "syncProviderR2Worker": {
+        "message": "Cloudflare R2 + Worker Proxy (Fastest + Short Links)"
+    },
+    "syncProviderS3": {
+        "message": "S3-Compatible Storage"
+    },
+    "syncProviderGoogleDrive": {
+        "message": "Google Drive (appDataFolder · Coming Soon)"
+    },
+    "webdavTipJianguoyun": {
+        "message": "Use a Jianguoyun App-Specific Password. Automatic HTTP 429 backoff and >=60s sync floor are enabled."
+    },
+    "webdavTip123Pan": {
+        "message": "123Pan WebDAV typically uses https://webdav.123pan.cn/webdav/ and creates the LinkMap folder automatically."
+    },
+    "webdavTipOpenList": {
+        "message": "OpenList usually mounts at /dav/. If 302 redirect errors occur, enable WebDAV Proxy in OpenList and check CORS."
+    },
+    "r2DirectTip": {
+        "message": "Direct R2 access requires a bucket CORS policy. Use R2 + Worker with a custom domain for best speed in mainland China."
+    },
+    "copyR2Cors": {
+        "message": "Copy R2 CORS JSON"
+    },
+    "r2CorsCopied": {
+        "message": "Copied R2 CORS JSON; paste into Bucket Settings -> CORS Policy"
+    },
+    "r2WorkerTip": {
+        "message": "Deploy workers/r2-sync-worker/ with a custom domain: faster mainland China routing, no manual bucket CORS, plus R2 short-link QR sharing."
+    },
+    "googleDrivePlannedTitle": {
+        "message": "Google Drive Sync Reserved"
+    },
+    "googleDrivePlannedDesc": {
+        "message": "Hidden appDataFolder + Chrome OAuth sync is scaffolded for a future release without extra permissions today."
+    },
+    "syncE2eeLabel": {
+        "message": "AES-256-GCM End-to-End Encryption"
+    },
+    "syncE2eePlaceholder": {
+        "message": "Passphrase encrypted locally before upload"
+    },
+    "syncAutoSync": {
+        "message": "Auto incremental sync on changes"
+    },
+    "syncSaveConfig": {
+        "message": "Save Config"
+    },
+    "syncConfigSaved": {
+        "message": "Sync configuration saved (never included in JSON exports)"
+    },
+    "syncTestConnection": {
+        "message": "Test Connection"
+    },
+    "syncNow": {
+        "message": "Sync Now"
+    },
+    "syncForcePush": {
+        "message": "Force Push"
+    },
+    "syncForcePushConfirm": {
+        "message": "Overwrite cloud manifest and chunks from local state?"
+    },
+    "syncForcePull": {
+        "message": "Force Pull"
+    },
+    "syncForcePullConfirm": {
+        "message": "A local snapshot will be saved first. Replace workspace from cloud?"
+    },
+    "syncConflictTitle": {
+        "message": "Sync conflict between local & cloud"
+    },
+    "syncConflictDesc": {
+        "message": "Both devices changed since the last sync. Choose how to resolve:"
+    },
+    "syncConflictMerge": {
+        "message": "Merge Both (Recommended)"
+    },
+    "syncConflictKeepLocal": {
+        "message": "Keep Local"
+    },
+    "syncConflictKeepRemote": {
+        "message": "Keep Cloud"
+    },
+    "syncLastTime": {
+        "message": "Last Synced"
+    },
+    "syncNever": {
+        "message": "Never"
+    },
+    "generateR2ShortLink": {
+        "message": "Create R2 Short Link + QR"
+    },
+    "useLocalHashLink": {
+        "message": "Switch to Hash Link"
+    },
+    "r2ShortLinkCreated": {
+        "message": "R2 short link created and QR updated"
+    },
+    "aiAssistantTab": {
+        "message": "AI"
+    },
+    "aiAssistantTitle": {
+        "message": "AI Workspace Assistant"
+    },
+    "aiOfflineBannerTitle": {
+        "message": "Simple Offline Mode is ON — AI requests are blocked"
+    },
+    "aiOfflineBannerDesc": {
+        "message": "No tab URLs leave your device in offline mode. Disable Offline Mode first to connect DeepSeek or another compatible API."
+    },
+    "aiEnableToggle": {
+        "message": "Enable AI Assistant (BYOK / Local LLM)"
+    },
+    "aiProvider": {
+        "message": "AI Provider Preset (OpenAI-Compatible)"
+    },
+    "aiOutputLang": {
+        "message": "AI Output Language"
+    },
+    "aiMaxItems": {
+        "message": "Max Tabs Per Request"
+    },
+    "aiStripQuery": {
+        "message": "Strip URL query strings & credentials before sending"
+    },
+    "aiDomainBlacklist": {
+        "message": "Privacy Blacklist Domains / Keywords (one per line)"
+    },
+    "aiConfigSaved": {
+        "message": "AI settings saved locally (excluded from standard JSON exports)"
+    },
+    "openAiAssistant": {
+        "message": "Open AI Assistant"
+    },
+    "aiNotConfiguredBanner": {
+        "message": "AI Assistant is not enabled yet (DeepSeek V3 recommended for low cost)."
+    },
+    "aiConfigureBtn": {
+        "message": "Configure AI"
+    },
+    "aiScopeLabel": {
+        "message": "Scope"
+    },
+    "aiScopeOpen": {
+        "message": "All Open Tabs"
+    },
+    "aiScopeAll": {
+        "message": "All Workspace Tabs"
+    },
+    "aiTabDigest": {
+        "message": "Resume Work"
+    },
+    "aiTabOrganize": {
+        "message": "Organize"
+    },
+    "aiTabReadlist": {
+        "message": "Readlist"
+    },
+    "aiTabDescriptions": {
+        "message": "Site Guides"
+    },
+    "aiRunDigest": {
+        "message": "Summarize Work Progress"
+    },
+    "aiDigestHint": {
+        "message": "Capture where you left off and what tabs to reopen next"
+    },
+    "aiResumePriority": {
+        "message": "Reopen Priority Tabs"
+    },
+    "aiOpenStreamTabs": {
+        "message": "Reopen Stream"
+    },
+    "aiSaveAsCollection": {
+        "message": "Save Group"
+    },
+    "aiDigestHistory": {
+        "message": "Saved Progress Snapshots"
+    },
+    "aiRunOrganize": {
+        "message": "Analyze & Propose Groups"
+    },
+    "aiOrganizeEmpty": {
+        "message": "Let AI group scattered tabs and highlight potential duplicates"
+    },
+    "aiApplyAsCollections": {
+        "message": "Save Selected as Collections"
+    },
+    "aiApplyAsChromeGroups": {
+        "message": "Group Directly in Browser"
+    },
+    "aiDuplicatesFound": {
+        "message": "Potential duplicate tabs detected"
+    },
+    "aiCloseDuplicates": {
+        "message": "Close & Save Duplicates"
+    },
+    "aiRunReadlist": {
+        "message": "Curate Readlist & Goodies"
+    },
+    "aiSaveGuidesToDashboard": {
+        "message": "Save Guides to Dashboard"
+    },
+    "aiReadlistEmpty": {
+        "message": "Organize news, repos, videos, and saved goodies with priority levels"
+    },
+    "aiDescriptionsIntro": {
+        "message": "Batch-generate one-line guides for links in scope and save them to the Dashboard. Manual notes are always preserved."
+    },
+    "aiSkipCachedDesc": {
+        "message": "Only fill missing descriptions (skip cached & manual notes)"
+    },
+    "aiRunDescriptions": {
+        "message": "Generate Site Guides"
+    },
+    "dashboardAiGuideBtn": {
+        "message": "AI Guides"
     }
 }

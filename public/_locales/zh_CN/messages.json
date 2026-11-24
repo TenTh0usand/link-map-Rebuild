@@ -1,6 +1,6 @@
 {
     "extDesc": {
-        "message": "⭐Link Map - 专业标签管理工具，构建自己的链接收藏夹"
+        "message": "⭐Link Map - 纯本地优先的树形标签页与标签页组工作区"
     },
     "search": {
         "message": "搜索"
@@ -9,25 +9,25 @@
         "message": "设置"
     },
     "settingsImportExport": {
-        "message": "备份和恢复"
+        "message": "备份、恢复与迁移"
     },
     "exportLinkMapData": {
-        "message": "导出数据"
+        "message": "导出 Link Map JSON"
     },
     "importLinkMapData": {
-        "message": "导入数据"
+        "message": "导入 Link Map 数据"
     },
     "importTabOutlinerData": {
-        "message": "导入TabOutliner数据"
+        "message": "导入 Tabs Outliner 数据"
     },
     "feedback": {
         "message": "反馈"
     },
     "feedbackDesc": {
-        "message": "反馈关于LinkMap的建议/问题"
+        "message": "反馈关于 Link Map 的建议或问题"
     },
     "ctxMenuEdit": {
-        "message": "编辑"
+        "message": "编辑别名"
     },
     "ctxMenuDelete": {
         "message": "删除"
@@ -42,85 +42,34 @@
         "message": "复制链接"
     },
     "ctxMenuCopyMarkDownLink": {
-        "message": "复制Markdown链接"
+        "message": "复制 Markdown 链接"
     },
     "ctxMenuNotes": {
         "message": "笔记"
     },
     "ctxMenuNotesCreateAsParent": {
-        "message": "作为父节点"
+        "message": "作为父节点插入笔记"
     },
     "ctxMenuNotesCreateAsFirstSubNode": {
-        "message": "作为第一个子节点"
+        "message": "作为第一个子节点插入笔记"
     },
     "ctxMenuNotesCreateAsLastSubNode": {
-        "message": "作为最后一个子节点"
+        "message": "作为最后一个子节点插入笔记"
     },
     "ctxMenuNotesCreateAfter": {
-        "message": "作为下一个节点(仅对笔记节点生效)"
+        "message": "在下方插入笔记"
     },
     "importPageInfo": {
-        "message": "根据需要将下面的节点拖拽到LinkMap中就可以完成数据导入"
+        "message": "将下方节点直接拖拽到 Link Map 主树，或勾选后点击批量导入"
     },
     "importPageExportTime": {
         "message": "备份时间"
     },
     "welcomeTitle": {
-        "message": "欢迎使用Link Map！"
-    },
-    "welcomeIntro": {
-        "message": "Link Map是一个浏览器扩展，用来帮助你管理你的标签和构建链接收藏。"
-    },
-    "welcomeIntro2": {
-        "message": "现在Link Map还处于早期版本，有任何问题可以联系我们，更多新功能正在开发中。"
-    },
-    "welcomeIntro3": {
-        "message": "现在我们准备了一些小技巧来帮助你快速上手。"
-    },
-    "welcomeIntro4": {
-        "message": "你可以关闭这个弹窗，跟随'\uD83D\uDE80 小技巧'节点的指引来试一试。"
-    },
-    "tipsTitle": {
-        "message": "小技巧"
-    },
-    "tipsDnd": {
-        "message": "用鼠标拖拽这里，可以重新安排节点和Tab的顺序"
-    },
-    "tipsHover": {
-        "message": "鼠标悬停在这里，在右侧会显示快捷按钮"
-    },
-    "tipsEdit": {
-        "message": "点击'编辑'按钮可以重命名节点"
-    },
-    "tipsDelete": {
-        "message": "点击'删除'按钮可以删除节点"
-    },
-    "tipsDeleteAll": {
-        "message": "收起所有节点，点击'删除'按钮可以删除所有节点"
-    },
-    "tipsDeleteAllSample": {
-        "message": "默默等待删除"
-    },
-    "tipsRClick": {
-        "message": "右键点击这里，可以进行更多操作"
-    },
-    "tipsSearch": {
-        "message": "尝试在搜索框中输入关键字，可以快速定位到你想要的节点"
-    },
-    "tipsSettings": {
-        "message": "在设置中可以备份或恢复数据"
-    },
-    "tipsFeedback1": {
-        "message": "非常欢迎你的反馈"
-    },
-    "tipsFeedback2": {
-        "message": "在设置中可以反馈问题"
-    },
-    "tipsFinish": {
-        "message": "完成！可以删除这些节点并开始使用！"
+        "message": "欢迎使用 Link Map v2！"
     },
     "appearance": {
-        "message": "外观"
+        "message": "外观与行为"
     },
     "theme": {
         "message": "主题"
@@ -135,7 +84,7 @@
         "message": "黑暗模式"
     },
     "commandTriggerLinkMap": {
-        "message": "打开Link Map"
+        "message": "打开 Link Map"
     },
     "commandUnset": {
         "message": "未设置"
@@ -164,65 +113,8 @@
     "shortcut": {
         "message": "快捷键"
     },
-    "updateNoteTitle": {
-        "message": "Link Map感觉自己更强大了！"
-    },
-    "updateNoteContent": {
-        "message": "在v1.0.10版本中，增加了一些小的改进，可以更细粒度的控制Link Map的行为。如果你感兴趣，只需查看树中的第一个节点来获取细节"
-    },
-    "updateTutorialNode": {
-        "message": "v1.0.10中的新功能"
-    },
-    "updateTutorialFeature1": {
-        "message": "选项：就在'展开全部'按钮旁边"
-    },
-    "updateTutorialFeature1Desc1": {
-        "message": "自动滚动到激活的标签"
-    },
-    "updateTutorialFeature1Desc11": {
-        "message": "启用：切换标签时，树将自动滚动到激活的标签节点，并使其可见"
-    },
-    "updateTutorialFeature1Desc12": {
-        "message": "禁用：树啥也不做，就那么呆着"
-    },
-    "updateTutorialFeature1Desc2": {
-        "message": "根据层级创建新标签"
-    },
-    "updateTutorialFeature1Desc21": {
-        "message": "启用：如果从最后一个标签创建的空标签页，新标签页会作为子节点创建"
-    },
-    "updateTutorialFeature1Desc22": {
-        "message": "禁用：新标签将始终作为窗口的最后一个子节点创建"
-    },
-    "updateTutorialFeature1Desc23": {
-        "message": "我的描述可能会让你感到困惑，请尝试一下"
-    },
-    "updateTutorialFeature2": {
-        "message": "将子树复制为TXT/Markdown：功能在右键下拉菜单中"
-    },
-    "updateTutorialFeature2Desc1": {
-        "message": "将链接复制到笔记应用程序中时很有用"
-    },
-    "updateTutorialFeature3": {
-        "message": "'定位标签节点'优化"
-    },
-    "updateTutorialFeature3Desc1": {
-        "message": "现在它只会定位顶级窗口中处于激活状态的标签"
-    },
-    "updateTutorialFeature3Desc2": {
-        "message": "它仍然不完美，有时会有问题，我将继续优化"
-    },
-    "reviewLinkMap": {
-        "message": "Link Map有没有帮到你或者有什么想吐槽的？"
-    },
-    "reviewLinkMapDesc": {
-        "message": "双击这个节点"
-    },
-    "reviewLinkMapDesc2": {
-        "message": "给Link Map评分"
-    },
     "locate": {
-        "message": "定位标签节点"
+        "message": "定位当前激活标签"
     },
     "collapseAll": {
         "message": "收起全部"
@@ -231,16 +123,16 @@
         "message": "展开全部"
     },
     "activeOrOpen": {
-        "message": "激活/打开"
+        "message": "激活 / 打开"
     },
     "save": {
-        "message": "保存"
+        "message": "锁定保存"
     },
     "copySubtreeAsText": {
-        "message": "复制全部为txt"
+        "message": "复制子树为 TXT"
     },
     "copySubtreeAsMarkdown": {
-        "message": "复制全部为Markdown"
+        "message": "复制子树为 Markdown"
     },
     "options": {
         "message": "选项"
@@ -249,18 +141,465 @@
         "message": "自动滚动到激活的标签"
     },
     "createNewTabByLevel": {
-        "message": "根据层级创建新标签"
+        "message": "根据打开来源层级创建新标签"
     },
     "deleteNode": {
-        "message": "删除节点"
+        "message": "仅删除当前节点"
     },
     "deleteSubtree": {
-        "message": "删除子树"
+        "message": "删除整棵子树"
     },
     "closeNode": {
-        "message": "关闭节点"
+        "message": "关闭并保存当前节点"
     },
     "closeSubtree": {
-        "message": "关闭子树"
+        "message": "关闭并保存整棵子树"
+    },
+    "offlineMode": {
+        "message": "简易离线模式（绝对不联网）"
+    },
+    "offlineModeDesc": {
+        "message": "100% 本地运行：彻底禁用一切网络请求、云同步与 AI 接口，不记录任何用户行为数据，全部数据仅保存在本地 IndexedDB。"
+    },
+    "offlineModeBadge": {
+        "message": "纯本地"
+    },
+    "openInWindow": {
+        "message": "以独立窗口打开"
+    },
+    "openInSidePanel": {
+        "message": "切回原生侧边栏"
+    },
+    "defaultOpenMode": {
+        "message": "点击扩展图标默认行为"
+    },
+    "defaultOpenModeDesc": {
+        "message": "选择点击浏览器工具栏扩展图标或使用快捷键时的默认打开形态（可在右上角随时互切）"
+    },
+    "modeSidePanel": {
+        "message": "展开侧边栏"
+    },
+    "modeWindow": {
+        "message": "独立小窗口"
+    },
+    "viewTree": {
+        "message": "树形视图"
+    },
+    "viewGroups": {
+        "message": "标签组"
+    },
+    "newCollection": {
+        "message": "新建标签页组"
+    },
+    "newNote": {
+        "message": "新建笔记分组"
+    },
+    "groupInChrome": {
+        "message": "在浏览器中建组"
+    },
+    "ungroupInChrome": {
+        "message": "解散浏览器标签组"
+    },
+    "syncNativeTabGroups": {
+        "message": "双向同步浏览器原生标签组"
+    },
+    "compactMode": {
+        "message": "紧凑列表模式"
+    },
+    "moveToCollection": {
+        "message": "添加到自定义标签组"
+    },
+    "openAllTabs": {
+        "message": "以标签组一键打开"
+    },
+    "closeAndSaveAll": {
+        "message": "全部关闭并保存"
+    },
+    "multiSelect": {
+        "message": "多选批量操作"
+    },
+    "selectedCount": {
+        "message": "项已选"
+    },
+    "batchCloseSave": {
+        "message": "关闭保存"
+    },
+    "batchDelete": {
+        "message": "删除"
+    },
+    "batchCopyMd": {
+        "message": "复制 MD"
+    },
+    "batchCopyTxt": {
+        "message": "复制 TXT"
+    },
+    "batchGroupChrome": {
+        "message": "建组"
+    },
+    "clearSelection": {
+        "message": "取消"
+    },
+    "localBackups": {
+        "message": "本地滚动快照"
+    },
+    "createBackupNow": {
+        "message": "立即创建快照"
+    },
+    "restoreBackup": {
+        "message": "恢复此快照"
+    },
+    "noBackups": {
+        "message": "暂无本地快照"
+    },
+    "importSelected": {
+        "message": "导入勾选节点到主树"
+    },
+    "importAllToTree": {
+        "message": "全部导入到主树"
+    },
+    "importAllAsCollection": {
+        "message": "导入为新标签组"
+    },
+    "importSuccess": {
+        "message": "导入成功"
+    },
+    "dragOrClickImport": {
+        "message": "拖拽 Link Map (.json) 或 Tabs Outliner (.tree / .json) 文件到此处，或点击选择"
+    },
+    "dashboard": {
+        "message": "导航页视图"
+    },
+    "openInDashboard": {
+        "message": "在导航页打开"
+    },
+    "showSiteDescriptions": {
+        "message": "显示网址一句话导读"
+    },
+    "showSiteDescriptionsDesc": {
+        "message": "在导航页卡片上展示站点简介，辅助快速判断每个网址看什么"
+    },
+    "addDescription": {
+        "message": "添加一句话导读"
+    },
+    "editDescription": {
+        "message": "编辑一句话导读"
+    },
+    "descriptionPlaceholder": {
+        "message": "一句话说明：这个网址主要是干嘛的、看什么？"
+    },
+    "allItems": {
+        "message": "全部站点"
+    },
+    "catWorkspace": {
+        "message": "工作区"
+    },
+    "catReadlist": {
+        "message": "稍后阅读"
+    },
+    "catRepo": {
+        "message": "开源项目"
+    },
+    "catMedia": {
+        "message": "影音娱乐"
+    },
+    "catGeneral": {
+        "message": "常用好物"
+    },
+    "share": {
+        "message": "分享"
+    },
+    "shareSingleCard": {
+        "message": "生成精美二维码卡片"
+    },
+    "shareGroup": {
+        "message": "分享网页组 / 标签组"
+    },
+    "shareLinkAndQr": {
+        "message": "链接 & 二维码"
+    },
+    "shareOfflineHtml": {
+        "message": "离线独立 HTML"
+    },
+    "shareMarkdownTab": {
+        "message": "Markdown / TXT"
+    },
+    "copyImage": {
+        "message": "复制卡片图片"
+    },
+    "downloadPng": {
+        "message": "下载 PNG 卡片"
+    },
+    "copyShareLink": {
+        "message": "复制分享链接"
+    },
+    "downloadHtml": {
+        "message": "导出离线 HTML"
+    },
+    "openShareViewer": {
+        "message": "在分享页打开"
+    },
+    "cardTheme": {
+        "message": "卡片风格"
+    },
+    "showWatermark": {
+        "message": "显示 Link Map 水印"
+    },
+    "shareBaseUrl": {
+        "message": "公开静态分享页地址（可选）"
+    },
+    "shareBaseUrlDesc": {
+        "message": "留空默认使用扩展内置分享查看器；可将 share-web/index.html 部署到 GitHub/Cloudflare Pages 填入地址，手机扫码直接打开（零服务器存储）。"
+    },
+    "qrTooLargeHint": {
+        "message": "链接数量较多，已超出手机稳定扫码容量，建议改用「复制分享链接」或「导出离线 HTML」。"
+    },
+    "importSharedBundle": {
+        "message": "导入到 Link Map"
+    },
+    "pasteShareLink": {
+        "message": "粘贴 Link Map 分享链接或 #lm1=... 分享码"
+    },
+    "cloudSyncTab": {
+        "message": "云同步"
+    },
+    "syncOfflineBannerTitle": {
+        "message": "当前处于「简易离线模式」，云同步已彻底锁定"
+    },
+    "syncOfflineBannerDesc": {
+        "message": "该模式下所有外网请求均被底层拦截。仅当您信任并自配个人云存储时，再关闭离线模式进行同步。"
+    },
+    "disableOfflineModeBtn": {
+        "message": "关闭离线模式以配置云同步"
+    },
+    "syncProvider": {
+        "message": "同步后端"
+    },
+    "syncProviderNone": {
+        "message": "暂不启用（仅本地 IndexedDB）"
+    },
+    "syncProviderWebDav": {
+        "message": "WebDAV（坚果云 / 123云盘 / OpenList）"
+    },
+    "syncProviderR2": {
+        "message": "Cloudflare R2（直连 S3 API）"
+    },
+    "syncProviderR2Worker": {
+        "message": "Cloudflare R2 + Worker 加速（推荐中国区 + 短链分享）"
+    },
+    "syncProviderS3": {
+        "message": "通用 S3 兼容存储"
+    },
+    "syncProviderGoogleDrive": {
+        "message": "Google Drive（appDataFolder · 即将支持）"
+    },
+    "webdavTipJianguoyun": {
+        "message": "坚果云请使用「安全选项 -> 第三方应用管理」生成的应用专用密码；已启用 HTTP 429 退避及 >=60s 防限流间隔。"
+    },
+    "webdavTip123Pan": {
+        "message": "123云盘默认 WebDAV 地址为 https://webdav.123pan.cn/webdav/，将自动创建 LinkMap 目录存放分片。"
+    },
+    "webdavTipOpenList": {
+        "message": "OpenList 默认路径通常以 /dav/ 结尾；若遇 302 跳转报错，请在 OpenList 开启「WebDAV 代理 / 本机代理」并检查 CORS。"
+    },
+    "r2DirectTip": {
+        "message": "直连需在 R2 存储桶配置 CORS。中国区访问建议改用「R2 + Worker 加速」并绑定自定义域名。"
+    },
+    "copyR2Cors": {
+        "message": "复制 R2 CORS JSON"
+    },
+    "r2CorsCopied": {
+        "message": "已复制 R2 CORS 策略 JSON，请粘贴至 Cloudflare R2 存储桶 Settings -> CORS Policy"
+    },
+    "r2WorkerTip": {
+        "message": "请使用仓库 workers/r2-sync-worker/ 一键部署私有 Worker 并绑定自定义域名：中国大陆直连更快、免配置 R2 CORS，且自动解锁大组短链二维码分享。"
+    },
+    "googleDrivePlannedTitle": {
+        "message": "Google Drive 同步界面已预留"
+    },
+    "googleDrivePlannedDesc": {
+        "message": "后续版本将基于隐藏应用目录 (appDataFolder) + Chrome OAuth 接入，当前保持零额外权限。"
+    },
+    "syncE2eeLabel": {
+        "message": "AES-256-GCM 端到端加密（推荐）"
+    },
+    "syncE2eePlaceholder": {
+        "message": "输入跨设备一致的加密口令（本地加密后再上传）"
+    },
+    "syncAutoSync": {
+        "message": "变更后自动增量同步"
+    },
+    "syncSaveConfig": {
+        "message": "保存配置"
+    },
+    "syncConfigSaved": {
+        "message": "云同步配置已保存（不会导出到普通 JSON 备份）"
+    },
+    "syncTestConnection": {
+        "message": "测试连接"
+    },
+    "syncNow": {
+        "message": "立即同步"
+    },
+    "syncForcePush": {
+        "message": "强制上传"
+    },
+    "syncForcePushConfirm": {
+        "message": "确认使用本地数据覆盖云端清单与分片？"
+    },
+    "syncForcePull": {
+        "message": "强制拉取"
+    },
+    "syncForcePullConfirm": {
+        "message": "拉取前会自动创建本地快照，确认以云端覆盖当前工作区？"
+    },
+    "syncConflictTitle": {
+        "message": "检测到云端与本地双端变更冲突"
+    },
+    "syncConflictDesc": {
+        "message": "上次同步后本地与云端均有修改，请选择处理方式"
+    },
+    "syncConflictMerge": {
+        "message": "合并两端数据（推荐）"
+    },
+    "syncConflictKeepLocal": {
+        "message": "以本地为准"
+    },
+    "syncConflictKeepRemote": {
+        "message": "以云端为准"
+    },
+    "syncLastTime": {
+        "message": "最近同步"
+    },
+    "syncNever": {
+        "message": "尚未同步"
+    },
+    "generateR2ShortLink": {
+        "message": "生成 R2 加速短链 + 二维码"
+    },
+    "useLocalHashLink": {
+        "message": "切回本地 Hash 链接"
+    },
+    "r2ShortLinkCreated": {
+        "message": "已生成 R2 短链并刷新二维码"
+    },
+    "aiAssistantTab": {
+        "message": "AI 助手"
+    },
+    "aiAssistantTitle": {
+        "message": "AI 工作区智能助手"
+    },
+    "aiOfflineBannerTitle": {
+        "message": "当前处于「简易离线模式」，AI 请求已彻底拦截"
+    },
+    "aiOfflineBannerDesc": {
+        "message": "本地模式不会外发任何标签页数据。若需使用 DeepSeek 等兼容 API，请先关闭离线模式，并可配置隐私黑名单域名。"
+    },
+    "aiEnableToggle": {
+        "message": "启用 AI 工作区助手（自带 Key / 本地模型）"
+    },
+    "aiProvider": {
+        "message": "模型服务预设（OpenAI 兼容）"
+    },
+    "aiOutputLang": {
+        "message": "AI 输出语言"
+    },
+    "aiMaxItems": {
+        "message": "单次最多发送标签数"
+    },
+    "aiStripQuery": {
+        "message": "发送前自动剥离 URL 参数与认证信息（防泄露 Token）"
+    },
+    "aiDomainBlacklist": {
+        "message": "隐私域名 / 关键字黑名单（每行一个，命中永不发送）"
+    },
+    "aiConfigSaved": {
+        "message": "AI 配置已保存在本地（不会导出到普通备份）"
+    },
+    "openAiAssistant": {
+        "message": "打开 AI 助手"
+    },
+    "aiNotConfiguredBanner": {
+        "message": "尚未启用或配置 AI 模型（推荐使用高性价比的 DeepSeek V3）。"
+    },
+    "aiConfigureBtn": {
+        "message": "去配置 AI"
+    },
+    "aiScopeLabel": {
+        "message": "分析范围"
+    },
+    "aiScopeOpen": {
+        "message": "当前所有打开标签"
+    },
+    "aiScopeAll": {
+        "message": "全部工作区标签"
+    },
+    "aiTabDigest": {
+        "message": "进度恢复"
+    },
+    "aiTabOrganize": {
+        "message": "工作区整理"
+    },
+    "aiTabReadlist": {
+        "message": "Readlist 策展"
+    },
+    "aiTabDescriptions": {
+        "message": "一句话导读"
+    },
+    "aiRunDigest": {
+        "message": "总结做到哪了"
+    },
+    "aiDigestHint": {
+        "message": "梳理各条任务流断点与下一步建议，便于随时恢复工作"
+    },
+    "aiResumePriority": {
+        "message": "一键重开优先标签"
+    },
+    "aiOpenStreamTabs": {
+        "message": "在浏览器重开"
+    },
+    "aiSaveAsCollection": {
+        "message": "存为标签组"
+    },
+    "aiDigestHistory": {
+        "message": "历史进度档案"
+    },
+    "aiRunOrganize": {
+        "message": "分析并生成整理方案"
+    },
+    "aiOrganizeEmpty": {
+        "message": "点击上方按钮，让 AI 识别关联标签并建议标签组与去重项"
+    },
+    "aiApplyAsCollections": {
+        "message": "保存勾选项为持久标签组"
+    },
+    "aiApplyAsChromeGroups": {
+        "message": "在浏览器中直接建组"
+    },
+    "aiDuplicatesFound": {
+        "message": "检测到疑似重复标签"
+    },
+    "aiCloseDuplicates": {
+        "message": "一键关闭并保存重复项"
+    },
+    "aiRunReadlist": {
+        "message": "智能策展 Readlist / 好物"
+    },
+    "aiSaveGuidesToDashboard": {
+        "message": "把 AI 推荐导读写入导航页"
+    },
+    "aiReadlistEmpty": {
+        "message": "整理新闻、开源仓库、影音娱乐与收藏好物，并给出阅读优先级"
+    },
+    "aiDescriptionsIntro": {
+        "message": "批量为当前范围内网址生成一句话简介并同步至导航页；已填写的手动备注默认保留不覆盖。"
+    },
+    "aiSkipCachedDesc": {
+        "message": "仅补全尚无导读的网址（跳过已有缓存与手动备注，更省 Token）"
+    },
+    "aiRunDescriptions": {
+        "message": "批量生成一句话导读"
+    },
+    "dashboardAiGuideBtn": {
+        "message": "AI 生成导读"
     }
 }
